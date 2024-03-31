@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+            <div class="main">
+                <h3>CALCULATOR</h3>
+                <div class="box">
+                        <div id="display"></div>
+                        <div class="buttons">
+                            <div class="row">
+                                <button class="clear" onclick="clearDisplay()">C</button>
+                            <button onclick="deldigit()" class="del">DEL</button>
+                            <button onclick="insertValue('%')"  class="opertor">%</button>
+                            <button onclick="insertValue('/')" class="opertor"> /</button>
+                            </div>
+
+                            <div class="row">
+                                <button onclick="insertValue('7')" class="dig">7</button>
+                            <button onclick="insertValue('8')" class="dig">8</button>
+                            <button onclick="insertValue('9')" class="dig">9</button>
+                            <button  onclick="insertValue('*')" class="opertor"> *</button>
+                            </div>
+                            <div class="row">
+                                <button onclick="insertValue('4')" class="dig">4</button>
+                            <button onclick="insertValue('5')" class="dig">5</button>
+                            <button onclick="insertValue('6')" class="dig">6</button>
+                            <button onclick="insertValue('-')" class="opertor">-</button>
+                            </div>
+                            <div class="row">
+                                <button onclick="insertValue('1')" class="dig">1</button>
+                            <button onclick="insertValue('2')" class="dig">2</button>
+                            <button onclick="insertValue('3')" class="dig">3</button>
+                            <button onclick="insertValue('+')" class="opertor"> +</button>
+                            </div>
+
+
+                            <div class="row">
+                            <button onclick="insertValue('0')" class="dig">0</button>
+                            <button onclick="insertValue('00')" class="dig">00</button>
+                            <button onclick="insertValue('.')" class="dig">.</button>
+                            <button onclick="solve()" class="equal">=</button>
+                            </div>
+                        </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
